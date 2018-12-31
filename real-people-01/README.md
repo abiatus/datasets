@@ -1,0 +1,48 @@
+# real-people-01
+Free dataset (CC0) about 86056 people retrieved from Wikidata in December 2018 by random sampling.
+- Format: Comma-Separated Values (CSV), all fields double-quoted ("X")
+- Encoding: UTF-8
+
+## Columns
+- **id**: Each person's Wikidata URI. No blank values.
+  - Format: `Q\d+`
+- **birthDate**: Each person's date of birth with a precision of days. No blank values.
+  - Format: extended [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, `[+-]?\d+-\d+-\d+T00:00:00Z`
+- **birthDateYear**: Each person's year of birth. No blank values.
+  - Format: `[+-]?\d+`
+- **birthDateMonth**: Each person's month of birth. No blank values.
+  - Format: `\d+`
+- **birthDateDay**: Each person's day of birth. No blank values.
+  - Format: `\d+`
+- **deathDate**: Each person's date of death with a precision of days. No blank values.
+  - Format: extended [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) format, `[+-]?\d+-\d+-\d+T00:00:00Z`
+- **deathDateYear**: Each person's year of death. No blank values.
+  - Format: `[+-]?\d+`
+- **deathDateMonth**: Each person's month of death. No blank values.
+  - Format: `\d+`
+- **deathDateDay**: Each person's day of death. No blank values.
+  - Format: `\d+`
+- **daysLived**: Each person's days of life. No blank values.
+  - Format: `\d+`
+- **kilograms**: Each person's mass in kilograms at an arbitrary point in history. Mostly blank values.
+  - Format: `\d*`
+- **centimetres**: Each person's height in centimeters at an arbitrary point in history. Mostly blank values.
+  - Format: `\d*`
+- **sexLabel**: Each person's sex. No blank values.
+  - Format: `male`, `female`, `transgender female`, `transgender male`, `intersex`
+- **occupationLabel**: One of each person's occupations. Some blank values.
+  - Format: any
+- **eyeColorLabel**: Color of each person's eyes. Mostly blank values.
+  - Format: any
+- **hairColorLabel**: Color of each person's hair. Mostly blank values.
+  - Format: any
+- **bloodTypeLabel**: Each person's blood type. Mostly blank values.
+  - Format: `A`, `O`, `B`, `AB`, blank
+- **countryLabel**: One of each person's country of citizenship. Some blank values.
+  - Format: any
+- **deathCountryLabel**: Country where each person died. Some blank values.
+  - Format: any
+- **deathCauseLabel**: Each person's main cause of death. Mostly blank values.
+  - Format: any
+- **deathMannerLabel**: Each person's manner of death. Mostly blank values.
+  - Format: any
